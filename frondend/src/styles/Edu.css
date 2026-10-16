@@ -1,0 +1,479 @@
+/* ==========================================
+   EDUCATION SECTION
+========================================== */
+
+.education {
+  min-height: 100vh;
+  padding: 110px 8%;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(139, 124, 255, 0.08),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(0, 180, 255, 0.05),
+      transparent 28%
+    ),
+    #07070b;
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.education-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.education-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.education-heading span {
+  display: inline-block;
+
+  color: #a486ff;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  padding: 7px 13px;
+
+  background: rgba(139, 124, 255, 0.07);
+
+  border: 1px solid rgba(139, 124, 255, 0.18);
+
+  border-radius: 100px;
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.education-heading h2 {
+  margin: 15px 0 10px;
+
+  font-size: 44px;
+  font-weight: 700;
+
+  letter-spacing: -1.5px;
+
+  color: #ffffff;
+}
+
+.education-heading h2 strong {
+  color: #a486ff;
+}
+
+.education-heading p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.48);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   TIMELINE
+========================================== */
+
+.education-timeline {
+  position: relative;
+}
+
+/* Timeline line */
+
+.education-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  left: 22px;
+  top: 5px;
+  bottom: 5px;
+
+  width: 1px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(164, 134, 255, 0.5),
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+}
+
+/* ==========================================
+   EDUCATION CARD
+========================================== */
+
+.education-card {
+  position: relative;
+
+  padding-left: 65px;
+
+  margin-bottom: 38px;
+}
+
+/* ==========================================
+   DOT
+========================================== */
+
+.education-dot {
+  position: absolute;
+
+  left: 15px;
+  top: 25px;
+
+  width: 15px;
+  height: 15px;
+
+  background: #a486ff;
+
+  border-radius: 50%;
+
+  border: 3px solid #0b0b12;
+
+  box-shadow:
+    0 0 0 4px rgba(164, 134, 255, 0.12),
+    0 0 20px rgba(139, 124, 255, 0.5);
+
+  z-index: 3;
+}
+
+/* ==========================================
+   YEAR
+========================================== */
+
+.education-year {
+  display: inline-flex;
+
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  padding: 6px 12px;
+
+  color: #b9a9ff;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  background: rgba(139, 124, 255, 0.07);
+
+  border: 1px solid rgba(139, 124, 255, 0.18);
+
+  border-radius: 100px;
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+/* ==========================================
+   GLASS CONTENT CARD
+========================================== */
+
+.education-content {
+  position: relative;
+
+  padding: 23px 25px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.065),
+    rgba(255, 255, 255, 0.025)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+
+  border-radius: 18px;
+
+  backdrop-filter: blur(22px) saturate(140%);
+  -webkit-backdrop-filter: blur(22px) saturate(140%);
+
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Glass highlight */
+
+.education-content::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 20px;
+  right: 20px;
+
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.18),
+    transparent
+  );
+
+  pointer-events: none;
+}
+
+/* Hover */
+
+.education-content:hover {
+  transform: translateX(6px);
+
+  border-color: rgba(164, 134, 255, 0.35);
+
+  box-shadow:
+    0 20px 55px rgba(0, 0, 0, 0.35),
+    0 0 35px rgba(139, 124, 255, 0.07),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================
+   CONTENT TITLE
+========================================== */
+
+.education-content h3 {
+  margin: 0 0 8px;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 650;
+
+  letter-spacing: -0.3px;
+}
+
+/* ==========================================
+   COLLEGE / SCHOOL
+========================================== */
+
+.education-content h4 {
+  margin: 0 0 12px;
+
+  color: #a486ff;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.education-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+  .education {
+    padding: 90px 6%;
+  }
+
+  .education-container {
+    max-width: 750px;
+  }
+
+  .education-heading {
+    margin-bottom: 55px;
+  }
+
+  .education-heading h2 {
+    font-size: 40px;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+  .education {
+    min-height: auto;
+
+    padding: 75px 5%;
+  }
+
+  /* HEADING */
+
+  .education-heading {
+    margin-bottom: 45px;
+  }
+
+  .education-heading span {
+    font-size: 10px;
+
+    padding: 6px 11px;
+
+    letter-spacing: 2px;
+  }
+
+  .education-heading h2 {
+    margin: 13px 0 9px;
+
+    font-size: 32px;
+
+    letter-spacing: -1px;
+  }
+
+  .education-heading p {
+    font-size: 12px;
+
+    line-height: 1.6;
+  }
+
+  /* TIMELINE */
+
+  .education-timeline::before {
+    left: 12px;
+  }
+
+  /* CARD */
+
+  .education-card {
+    padding-left: 40px;
+
+    margin-bottom: 30px;
+  }
+
+  /* DOT */
+
+  .education-dot {
+    left: 5px;
+    top: 22px;
+
+    width: 14px;
+    height: 14px;
+
+    border-width: 3px;
+
+    box-shadow:
+      0 0 0 3px rgba(164, 134, 255, 0.12),
+      0 0 15px rgba(139, 124, 255, 0.45);
+  }
+
+  /* YEAR */
+
+  .education-year {
+    margin-bottom: 9px;
+
+    padding: 5px 10px;
+
+    font-size: 10px;
+  }
+
+  /* GLASS CARD */
+
+  .education-content {
+    padding: 18px;
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+
+  .education-content:hover {
+    transform: translateY(-3px);
+  }
+
+  /* TITLE */
+
+  .education-content h3 {
+    font-size: 17px;
+
+    margin-bottom: 7px;
+  }
+
+  /* COLLEGE */
+
+  .education-content h4 {
+    font-size: 12px;
+
+    margin-bottom: 10px;
+  }
+
+  /* DESCRIPTION */
+
+  .education-content p {
+    font-size: 12px;
+
+    line-height: 1.6;
+  }
+}
+
+/* ==========================================
+   VERY SMALL PHONES
+========================================== */
+
+@media (max-width: 380px) {
+  .education {
+    padding: 65px 4%;
+  }
+
+  .education-heading h2 {
+    font-size: 29px;
+  }
+
+  .education-card {
+    padding-left: 36px;
+  }
+
+  .education-timeline::before {
+    left: 10px;
+  }
+
+  .education-dot {
+    left: 3px;
+  }
+
+  .education-content {
+    padding: 16px;
+
+    border-radius: 14px;
+  }
+
+  .education-content h3 {
+    font-size: 16px;
+  }
+
+  .education-content h4 {
+    font-size: 11px;
+  }
+
+  .education-content p {
+    font-size: 11px;
+  }
+}

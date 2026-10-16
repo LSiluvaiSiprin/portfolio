@@ -1,0 +1,613 @@
+/* ==========================================
+   ABOUT SECTION - LIQUID GLASS
+========================================== */
+
+.about {
+  position: relative;
+
+  min-height: 100vh;
+  padding: 110px 8%;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(139, 124, 255, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 75%,
+      rgba(80, 140, 255, 0.08),
+      transparent 28%
+    ),
+    #08080d;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+/* ==========================================
+   LIQUID GLOW
+========================================== */
+
+.about::before {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  top: 10%;
+  left: -150px;
+
+  border-radius: 50%;
+
+  background: rgba(139, 124, 255, 0.12);
+
+  filter: blur(90px);
+
+  pointer-events: none;
+}
+
+.about::after {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  right: -130px;
+  bottom: 5%;
+
+  border-radius: 50%;
+
+  background: rgba(90, 120, 255, 0.08);
+
+  filter: blur(90px);
+
+  pointer-events: none;
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.about-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.about-title {
+  text-align: center;
+
+  margin-bottom: 65px;
+}
+
+.about-title p {
+  margin: 0 0 10px;
+
+  color: #9d7aff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.about-title h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(36px, 5vw, 48px);
+
+  line-height: 1.1;
+
+  letter-spacing: -2px;
+}
+
+.about-title h2 span {
+  color: #9d7aff;
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.about-content {
+  display: grid;
+
+  grid-template-columns: 1.15fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+/* ==========================================
+   TEXT GLASS AREA
+========================================== */
+
+.about-text {
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+
+  border-radius: 24px;
+
+  backdrop-filter: blur(25px) saturate(140%);
+  -webkit-backdrop-filter: blur(25px) saturate(140%);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  transition: 0.35s ease;
+}
+
+.about-text:hover {
+  border-color: rgba(157, 122, 255, 0.25);
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(139, 124, 255, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.about-text h3 {
+  margin: 0 0 18px;
+
+  color: #ffffff;
+
+  font-size: 27px;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.8px;
+}
+
+.about-text h3 span {
+  color: #9d7aff;
+}
+
+.about-text p {
+  margin: 0 0 16px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.about-buttons {
+  display: flex;
+
+  gap: 12px;
+
+  margin-top: 28px;
+}
+
+.about-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+
+  padding: 0 20px;
+
+  border-radius: 12px;
+
+  color: #ffffff;
+
+  background: linear-gradient(135deg, #8061ed, #a478ff);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  box-shadow:
+    0 10px 30px rgba(128, 97, 237, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 35px rgba(128, 97, 237, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================
+   OUTLINE BUTTON
+========================================== */
+
+.outline-btn {
+  color: rgba(255, 255, 255, 0.8);
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.outline-btn:hover {
+  color: #ffffff;
+
+  background: rgba(157, 122, 255, 0.08);
+
+  border-color: rgba(157, 122, 255, 0.45);
+}
+
+/* ==========================================
+   INFO CARDS
+========================================== */
+
+.about-info {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+}
+
+/* ==========================================
+   INFO CARD - LIQUID GLASS
+========================================== */
+
+.info-card {
+  position: relative;
+
+  min-height: 105px;
+
+  padding: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.065),
+    rgba(255, 255, 255, 0.025)
+  );
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+
+  border-radius: 18px;
+
+  backdrop-filter: blur(22px) saturate(150%);
+  -webkit-backdrop-filter: blur(22px) saturate(150%);
+
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Glass shine */
+
+.info-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 15%;
+
+  width: 70%;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  filter: blur(1px);
+}
+
+/* Hover */
+
+.info-card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(157, 122, 255, 0.3);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.35),
+    0 0 30px rgba(139, 124, 255, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================
+   INFO ICON
+========================================== */
+
+.info-card span {
+  width: 45px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 13px;
+
+  color: #b69cff;
+
+  font-size: 21px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(157, 122, 255, 0.18),
+    rgba(157, 122, 255, 0.06)
+  );
+
+  border: 1px solid rgba(157, 122, 255, 0.18);
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+/* ==========================================
+   INFO TEXT
+========================================== */
+
+.info-card h4 {
+  margin: 0 0 5px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+.info-card p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.42);
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+  .about {
+    padding: 90px 6%;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-buttons {
+    justify-content: center;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+  .about {
+    min-height: auto;
+
+    padding: 80px 5%;
+  }
+
+  /* TITLE */
+
+  .about-title {
+    margin-bottom: 35px;
+  }
+
+  .about-title p {
+    font-size: 10px;
+
+    letter-spacing: 2.5px;
+  }
+
+  .about-title h2 {
+    font-size: 34px;
+
+    letter-spacing: -1.5px;
+  }
+
+  /* CONTENT */
+
+  .about-content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+  }
+
+  /* TEXT */
+
+  .about-text {
+    width: 100%;
+
+    padding: 23px 19px;
+
+    border-radius: 19px;
+  }
+
+  .about-text h3 {
+    font-size: 22px;
+
+    margin-bottom: 14px;
+  }
+
+  .about-text p {
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 13px;
+  }
+
+  /* BUTTONS */
+
+  .about-buttons {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 9px;
+
+    margin-top: 22px;
+  }
+
+  .about-btn {
+    width: 100%;
+
+    min-height: 43px;
+
+    padding: 0 8px;
+
+    font-size: 11px;
+  }
+
+  /* INFO */
+
+  .about-info {
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+  }
+
+  /* INFO CARD */
+
+  .info-card {
+    min-height: 90px;
+
+    padding: 14px 11px;
+
+    gap: 10px;
+
+    border-radius: 15px;
+  }
+
+  /* ICON */
+
+  .info-card span {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 10px;
+
+    font-size: 17px;
+  }
+
+  /* TEXT */
+
+  .info-card h4 {
+    font-size: 12px;
+
+    margin-bottom: 3px;
+  }
+
+  .info-card p {
+    font-size: 9px;
+
+    line-height: 1.35;
+  }
+}
+
+/* ==========================================
+   VERY SMALL PHONE
+========================================== */
+
+@media (max-width: 380px) {
+  .about {
+    padding: 70px 5%;
+  }
+
+  .about-title h2 {
+    font-size: 30px;
+  }
+
+  .about-text {
+    padding: 20px 16px;
+  }
+
+  .about-text h3 {
+    font-size: 20px;
+  }
+
+  .about-text p {
+    font-size: 12px;
+  }
+
+  .about-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .about-info {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    min-height: 80px;
+  }
+}
